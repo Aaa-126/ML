@@ -1,44 +1,61 @@
+#  Iris Flower Classification
 
-**Iris Flower classification**
+This is a basic machine learning project that uses the classic **Iris dataset** to explore classification techniques, the power of visualization, and the impact of thoughtful feature selection in building efficient models.
 
- 1.Objective -
+---
 
-	This is a basic machine learning project that uses the classic Iris-dataset to 	explore classification techniques 
- 	and the power of visualization and proper data pairing in model building.
+##  Objective
 
-	1.Explore feature relationships visually.
-	2.Understand the structure of the Iris dataset.
-	3.Highlight how thoughtful feature pairing can simplify modeling.
-	4.Build an efficient classification model using clean preprocessing and pipeline methods.
+- Explore feature relationships visually
+- Understand the structure of the Iris dataset
+- Highlight how thoughtful feature pairing can simplify modeling
+- Build an efficient classification model using clean preprocessing and pipeline methods
 
+---
 
- 2.Dataset -
-	Source - downloaded from kaggle
-	Classes - Setosa, Versicolor, Virginica
-	Features - SepalLength, SepalWidth, PetalLength, PetalLength in cm
-	
- 
-3. Key Observation -
-	1. The dataset shows strong linear separability in feature, especially between PetalLength and PetalWidth
-	2.Simple visualisation using scatter plots reveals clear clustering patterns.
-	3.A simple linear classifier, like svm,  will do a great job.
-	
-4. Implementation Details-
-	a. Libraries Used-
-		i. pandas, numpy - data handling
-		ii. matplotlib, seaborn - for data visualization
-		iii. scikit-learn - for model building, and evaluation
-		
-	b. Steps -
-		i. Data cleaning and basic exploration.
-		ii. Label encoding using 'OrdinalEncoder'.
-		iii. feature visualization using 'matplotlib.pyplot.scatter'.
-		iv. Stratified train-test data splitting.
-		v. Trained a simple linear SVM model and a complex model like RandomForestClassifier - for comparison purpose only	
-		vi. model Tuning using RandomSearchCV based on f1 score
-5. Results- 
-	-Developed a good simple efficient classification model due to linear separability of dataset.
-	
-	- Emphasis on how data visualization informs model choice.
-		
-	
+##  Dataset
+
+- **Source**: [Kaggle - Iris Dataset](https://www.kaggle.com/datasets/uciml/iris)
+- **Classes**: Setosa, Versicolor, Virginica
+- **Features** (all in cm):
+  - SepalLength
+  - SepalWidth
+  - PetalLength
+  - PetalWidth
+
+---
+
+##  Key Observations
+
+- The dataset shows **strong linear separability**, especially between **PetalLength** and **PetalWidth**
+- Simple scatter plots reveal clear clustering patterns
+- A basic **linear classifier like SVM** is sufficient for high accuracy on this dataset
+
+---
+
+## ⚙ Implementation Details
+
+###  Libraries Used
+- `pandas`, `numpy` – for data handling
+- `matplotlib`, `seaborn` – for data visualization
+- `scikit-learn` – for model building and evaluation
+
+###  Steps Followed
+1. Data cleaning and basic exploration
+2. Label encoding using `OrdinalEncoder`
+3. Feature visualization using `matplotlib.pyplot.scatter`
+4. Stratified train-test split to preserve class distribution
+5. Model training:
+   - **Linear SVM** as the primary model
+   - **RandomForestClassifier** used for comparison
+6. Hyperparameter tuning using `RandomizedSearchCV` based on **F1-score**
+
+---
+
+##  Results
+
+- Developed a **simple yet highly effective classification model**
+- Achieved strong performance primarily due to the **linearly separable nature of the dataset**
+- Reinforced the value of **visual data inspection** in guiding model choice
+
+---

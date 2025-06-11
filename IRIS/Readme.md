@@ -1,7 +1,7 @@
 
 **Iris Flower classification**
 
-1.Objective -
+ 1.Objective -
 
 	This is a basic machine learning project that uses the classic Iris-dataset to 	explore classification techniques 
  	and the power of visualization and proper data pairing in model building.
@@ -12,12 +12,12 @@
 	4.Build an efficient classification model using clean preprocessing and pipeline methods.
 
 
-2.Dataset -
+ 2.Dataset -
 	Source - downloaded from kaggle
 	Classes - Setosa, Versicolor, Virginica
 	Features - SepalLength, SepalWidth, PetalLength, PetalLength in cm
 	
-
+ 
 3. Key Observation -
 	1. The dataset shows strong linear separability in feature, especially between PetalLength and PetalWidth
 	2.Simple visualisation using scatter plots reveals clear clustering patterns.
@@ -36,7 +36,6 @@
 		iv. Stratified train-test data splitting.
 		v. Trained a simple linear SVM model and a complex model like RandomForestClassifier - for comparison purpose only	
 		vi. model Tuning using RandomSearchCV based on f1 score
-		
 5. Results- 
 	-Developed a good simple efficient classification model due to linear separability of dataset.
 	

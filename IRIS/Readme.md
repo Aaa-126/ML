@@ -1,9 +1,10 @@
 
-Iris Flower classification
+**Iris Flower classification**
 
 1.Objective -
 
-	This is a basic machine learning project that uses the classic Iris-dataset to 	explore classification techniques and the power of visualization and proper data pairing in model building.
+	This is a basic machine learning project that uses the classic Iris-dataset to 	explore classification techniques and the power of 
+ 	visualization and proper data pairing in model building.
 
 	1.Explore feature relationships visually.
 	2.Understand the structure of the Iris dataset.
